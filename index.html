@@ -14,7 +14,7 @@
         document.addEventListener("deviceready",function(){
            // navigator.notification.alert("Funciona");
            $("#Tomarfoto").tap(function(){
-               navigator.device.captura.captureImage(function{mediaFiles})
+               navigator.device.capture.captureImage(function{mediaFiles})
                  path=mediaFiles[0].fullpath;
                  $("#Foto").append("<img src="+path+"width='100%'/>".attr("rel",path);
              }, function(error){
